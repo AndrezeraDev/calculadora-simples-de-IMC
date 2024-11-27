@@ -24,10 +24,14 @@ function calcular() {
     if(imcFormatado < 18.5){
         resultado.innerText =  `${nome.value} Seu IMC é de ${imcFormatado} Você está abaixo do peso`
     }else if(imcFormatado <= 25){
+        resultado.style.color = "green";
         resultado.innerText = `${nome.value} Seu IMC é de ${imcFormatado} Vocé está no peso ideal`
     }else if(imcFormatado <= 30){
+        resultado.style.color = "red";
         resultado.innerText = `${nome.value} Seu IMC é de ${imcFormatado} Vocé está com sobrepeso`
+
     }else if(imcFormatado <= 40){
+        resultado.style.color = "red";
         resultado.innerText = `${nome.value} Seu IMC é de ${imcFormatado} Vocé está com obesidade`
     }
 }
