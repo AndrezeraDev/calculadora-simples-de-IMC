@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Parkinsans", sans-serif;
+}
+
+body{
+    background-color: rgb(20, 19, 50);
+}
+
+.container{
+    color: aliceblue;
+    border: 1px solid rgb(234, 234, 234);
+    display: block;
+    margin: 200px auto;
+    width: 30%;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 150px 0px rgb(67, 75, 110);
+}
+
+.container h1{
+    text-decoration: underline;
+    text-align: center;
+}
+
+.form{ 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
+}
+
+.form input{
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.form input:focus{
+    border: 3px solid rgb(127, 127, 255) !important;
+}
+
+.form label{
+    margin: 5px 0px 5px 0px;
+}
+
+.form #calcular{
+    width: 25%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(145, 144, 153);
+    outline: none;
+    transition: 0.5s ease-in-out;
+}
+
+#calcular:hover{
+    background-color: rgb(173, 173, 175);
+    color: black;
+}
+
+#results{
+    margin: 16px;
+    padding-top: 5px;
+    color: rgb(80, 240, 255);
+
+}
